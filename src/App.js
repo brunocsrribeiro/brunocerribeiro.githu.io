@@ -3,7 +3,7 @@
 function App() {
   return (
     <div>
-      <h1>Meu GitHub Page</h1>
+      <h1>Bruno Ribeiro</h1>
     </div>
   );
 }
