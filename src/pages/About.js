@@ -1,11 +1,15 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 
 class About extends Component {
   render() {
     return (
-      <div>
-        <span>About</span>
-      </div>
+      <>
+        <Link to="/">Home</Link>
+        <Link to="about">About</Link>
+        <Link to="projects">Projects</Link>
+        <Link to="contacts">Contacts</Link>
+      </>
     );
   }
 }

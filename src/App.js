@@ -1,24 +1,21 @@
-import { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import About from "./pages/About";
-import Contacts from "./pages/Contacts";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Contacts from "./pages/Contacts";
 
 
-class App extends Component () {
-  render() {
-    return (
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={ Home } />
-          <Route path="/about" component={ About } />
-          <Route path="/projects" component={ Projects } />
-          <Route path="/Contacts" component={ Contacts } />
-        </Switch>
-      </BrowserRouter>
-    );
-  }
+function App() {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={ Home } />
+        <Route path="/about" component={ About } />
+        <Route path="/projects" component={ Projects } />
+        <Route path="/contacts" component={ Contacts } />
+      </Switch>
+    </BrowserRouter>
+  );
 }
 
 export default App;
